@@ -1,0 +1,95 @@
+
+@prefix iso25012dqi:     <http://purl.org/eis/vocab/iso25012dqi#> .
+@prefix iso8000dqi:     <http://purl.org/eis/vocab/iso19157dqi#> .
+@prefix iso19157:   	 <http://def.isotc211.org/iso19157/2013/DataQuality_2>.
+@prefix dqm:     	 <http://purl.org/eis/vocab/dqm#> .
+@prefix ov:     	 <http://open.vocab.org/terms>
+@prefix rdfs:		 <http://www.w3.org/2000/01/rdf-schema#>
+
+
+#Completeness
+iso25012dqi:Completeness owl:sameAs dqm:Completeness.
+iso25012dqi:Completeness owl:sameAs iso8000dqi:Completeness.
+iso25012dqi:Completeness owl:sameAs iso19157dqi:Completeness.
+dqm:Completeness owl:sameAs iso8000dqi:Completeness.
+dqm:Completeness owl:sameAs iso19157dqi:Completeness.
+iso8000dqi:Complete rdfs:subClassOf iso8000dqi:Completeness.
+iso8000dqi:Complete rdfs:subClassOf iso19157dqi:Completeness.
+iso8000dqi:Complete rdfs:subClassOf iso25012dqi:Completeness.
+iso8000dqi:Complete rdfs:subClassOf dqm:Completeness.
+iso8000dqi:Completeness owl:sameAs iso19157dqi:Completeness.
+
+#Consistency
+iso25012dqi:Consistency owl:sameAs dqm:Consistency.
+iso25012dqi:Consistency owl:sameAs iso8000dqi:Consistency.
+dqm:Consistency owl:sameAs iso8000dqi:Consistency.
+iso19157dqi:LogicalConsistency  rdfs:subClassOf iso25012dqi:Consistency.
+iso19157dqi:LogicalConsistency  rdfs:subClassOf dqm:Consistency.
+iso19157dqi:LogicalConsistency  rdfs:subClassOf iso8000dqi:Consistency.
+iso19157dqi:EntityIntegrity  rdfs:subClassOf iso25012dqi:Consistency.
+iso19157dqi:EntityIntegrity  rdfs:subClassOf dqm:Consistency.
+iso19157dqi:EntityIntegrity  rdfs:subClassOf iso8000dqi:Consistency.
+
+
+#Accuracy
+iso25012dqi:Accuracy owl:sameAs iso8000dqi:Accuracy.
+iso19157dqi:PositionalAccuracy rdfs:subClassOf iso25012dqi:Accuracy.
+iso19157dqi:ThematicAccuracy rdfs:subClassOf iso25012dqi:Accuracy.
+iso19157dqi:PositionalAccuracy rdfs:subClassOf iso8000dqi:Accuracy.
+iso19157dqi:ThematicAccuracy rdfs:subClassOf iso8000dqi:Accuracy.
+dqm:SemanticAccuracy rdfs:subClassOf iso25012dqi:Accuracy.
+dqm:SemanticAccuracy rdfs:subClassOf iso8000dqi:Accuracy.
+
+
+#Currentness
+iso25012dqi:Currentness  owl:sameAs dqm:Timeliness.
+iso25012dqi:Currentness  rdfs:subClassOf iso19157dqi:TemporalQuality.
+dqm:Timeliness  rdfs:subClassOf iso19157dqi:TemporalQuality.
+
+#Compliance
+iso25012dqi:Compliance owl:sameAs iso8000dqi:Compliance.
+dqm:RepresentationalConciseness rdfs:subClassOf iso8000dqi:Compliance.
+dqm:RepresentationalConciseness rdfs:subClassOf iso25012dqi:Compliance.
+iso8000dqi:DomainIntegrity rdfs:subClassOf iso8000dqi:Compliance.
+iso8000dqi:DomainIntegrity rdfs:subClassOf iso25012dqi:Compliance.
+iso8000dqi:ReferentialIntegrity rdfs:subClassOf iso8000dqi:Compliance.
+iso8000dqi:ReferentialIntegrity rdfs:subClassOf iso25012dqi:Compliance.
+iso8000dqi:UserDefinedIntegrity rdfs:subClassOf iso8000dqi:Compliance.
+iso8000dqi:UserDefinedIntegrity rdfs:subClassOf iso25012dqi:Compliance.
+
+#Confidentiality
+
+iso25012dqi:Confidentiality rdfs:subClassOf dqm:Security.
+iso25012dqi:Confidentiality rdfs:subClassOf iso8000dqi:Secure.
+iso8000dqi:Secure owl:sameAs dqm:Security.
+
+#Traceability
+iso25012dqi:Traceability ov:similarTo  dqm:Security.
+iso25012dqi:Traceability ov:similarTo  iso8000dqi:Secure.
+iso25012dqi:Traceability ov:similarTo  dqm:Trustworthiness.
+
+#Credibility
+iso25012dqi:Credibility rdfs:subClassOf  dqm:Trustworthiness.
+
+#Efficiency
+iso25012dqi:Efficiency owl:sameAs dqm:Performance.
+
+#Understandability
+iso25012dqi:Understandability owl:sameAs dqm:Understandability.
+iso25012dqi:Understandability ov:similarTo dqm:Versatility.
+dqm:Understandability ov:similarTo dqm:Versatility.
+
+#Availability
+iso25012dqi:Availability owl:sameAs dqm:Availability.
+
+
+#Accessibility
+iso25012dqi:Accessibile owl:sameAs iso8000dqi:Accessibility.
+iso25012dqi:Accessibile ov:similarTo dqm:Interlinking.
+iso25012dqi:Accessibile ov:similarTo dqm:Licensing.
+
+#Portability
+iso25012dqi:Portability ov:similarTo dqm:Interoperability.
+
+#Usability
+iso19157dqi:UsabilityElement ov:similarTo iso8000dqi:Useful.

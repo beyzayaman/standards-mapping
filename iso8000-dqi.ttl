@@ -1,0 +1,168 @@
+@prefix daq:     <http://purl.org/eis/vocab/daq#> .
+@prefix owl:	 <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfg:	 <http://www.w3.org/2004/03/trix/rdfg-1> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix qpro:     <http://purl.org/eis/vocab/qpro#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dct:  <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix iso8000dqi:     <http://purl.org/eis/vocab/iso8000dqi#> .
+
+
+
+### Ontology Information
+iso8000dqi:
+	a owl:Ontology ;
+    dct:title "ISO 8000 Quality Metrics (iso8000dqi)"@en ;
+    dc:description "ISO 8000 Quality Metrics (iso8000dqi) vocabulary describes a set of quality indicators based on the daQ vocabulary"@en ;
+    dct:creator [
+    		foaf:name "Beyza Yaman";
+    		foaf:homepage <https://dblp.org/pers/y/Yaman:Beyza.html> ;
+    		foaf:mbox <mailto:beyza.yaman@adaptcentre.ie>
+    	] ;
+    dct:modified "2020-06-11"^^xsd:date ;
+    dct:language "en"^^xsd:language ;
+    vann:preferredNamespaceUri "http://purl.org/eis/vocab/iso8000dqi#";
+	vann:preferredNamespacePrefix "iso8000dqi";
+	foaf:homepage <http://purl.org/eis/vocab/iso8000dqi> .
+
+
+
+
+### Pragmatic Category
+iso8000dqi:Pragmatic
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Category ;
+	rdfs:comment	"..." ;
+	rdfs:label	"Pragmatic" .
+
+#### Complete Dimension
+iso8000dqi:Complete
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Dimension ;
+	rdfs:comment	"..." ;
+	rdfs:label	"Complete" .
+
+#### Complete Dimension
+iso8000dqi:Complete
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Dimension ;
+	rdfs:comment	"..." ;
+	rdfs:label	"Complete" .
+
+#### Secure Dimension
+iso8000dqi:Secure
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Dimension ;
+	rdfs:comment	"..." ;
+	rdfs:label	"Secure" .
+
+#### Accessible Dimension
+iso8000dqi:Accessible
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Dimension ;
+	rdfs:comment	"..." ;
+	rdfs:label	"Accessible" .
+
+#### FlexibleContent Dimension
+iso8000dqi:FlexibleContent
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Dimension ;
+	rdfs:comment	"..." ;
+	rdfs:label	"FlexibleContent" .
+
+#### FlexibleLayout Dimension
+iso8000dqi:FlexibleLayout
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Dimension ;
+	rdfs:comment	"..." ;
+	rdfs:label	"FlexibleLayout" .
+
+#### Useful Dimension
+iso8000dqi:Useful
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Dimension ;
+	rdfs:comment	"..." ;
+	rdfs:label	"Useful" .
+
+### Syntactic Category
+iso8000dqi:Syntactic
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Category ;
+	rdfs:comment	"..." ;
+	rdfs:label	"Syntactic" .
+
+#### EntityIntegrity Dimension
+iso8000dqi:EntityIntegrity
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Dimension ;
+	rdfs:comment	"..." ;
+	rdfs:label	"EntityIntegrity" .
+
+#### ReferentialIntegrity Dimension
+iso8000dqi:ReferentialIntegrity
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Dimension ;
+	rdfs:comment	"..." ;
+	rdfs:label	"ReferentialIntegrity" .
+
+#### DomainIntegrity Dimension
+iso8000dqi:DomainIntegrity
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Dimension ;
+	rdfs:comment	"..." ;
+	rdfs:label	"DomainIntegrity" .
+
+#### UserDefinedIntegrity Dimension
+iso8000dqi:UserDefinedIntegrity
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Dimension ;
+	rdfs:comment	"..." ;
+	rdfs:label	"UserDefinedIntegrity" .
+
+
+### Semantic Category
+iso8000dqi:Semantic
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Category ;
+	rdfs:comment	"..." ;
+	rdfs:label	"Semantic" .
+
+#### Completeness Dimension
+iso8000dqi:Completeness
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Dimension ;
+	rdfs:comment	"..." ;
+	rdfs:label	"Completeness" .
+
+#### Consistency Dimension
+iso8000dqi:Consistency
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Dimension ;
+	rdfs:comment	"..." ;
+	rdfs:label	"Consistency" .
+
+#### Accuracy Dimension
+iso8000dqi:Accuracy
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Dimension ;
+	rdfs:comment	"..." ;
+	rdfs:label	"Accuracy" .
+
+#### Compliance Dimension
+iso8000dqi:Compliance
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Dimension ;
+	rdfs:comment	"..." ;
+	rdfs:label	"Compliance" .
+
+
+
+
+
+
+
