@@ -1,10 +1,11 @@
 
+@prefix rdfs:		 <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl:	 	 <http://www.w3.org/2002/07/owl#> .
 @prefix iso25012dqi:     <http://purl.org/eis/vocab/iso25012dqi#> .
-@prefix iso8000dqi:     <http://purl.org/eis/vocab/iso19157dqi#> .
+@prefix iso8000dqi:      <http://purl.org/eis/vocab/iso8000dqi#> .
 @prefix iso19157:   	 <http://def.isotc211.org/iso19157/2013/DataQuality_2>.
 @prefix dqm:     	 <http://purl.org/eis/vocab/dqm#> .
-@prefix ov:     	 <http://open.vocab.org/terms>
-@prefix rdfs:		 <http://www.w3.org/2000/01/rdf-schema#>
+@prefix ov:     	 <http://open.vocab.org/terms>.
 
 
 #Completeness
